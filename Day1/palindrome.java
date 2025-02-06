@@ -8,15 +8,17 @@ public static void main(String[] args){
 		int a = sc.nextInt();
 		int copy = a;
 		int newnum = 0;
-		while(a > 0){
+
+		while(a > 0)
+		{
 		int rem = a%10;
 		newnum = newnum*10 + rem;
 		a = a/ 10;
-	}
-if(newnum == copy){
-System.out.println("Same");}
-else
-System.out.println("Not same");
-		
+		}
+		if(newnum == copy){
+			System.out.println("Same");
+		}
+		else
+			System.out.println("Not same");
 		}
 }
